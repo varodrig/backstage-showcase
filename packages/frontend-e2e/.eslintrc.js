@@ -16,5 +16,24 @@
 
 module.exports = {
   root: true,
-  extends: ['custom'],
+  plugins: ['cypress', 'jest'],
+  extends: ['plugin:cypress/recommended', 'custom'],
+  rules: {
+    'jest/expect-expect': [
+      'error',
+      {
+        assertFunctionNames: ['expect', 'cy.contains'],
+      },
+    ],
+    'import/no-extraneous-dependencies': [
+      'error',
+      {
+        devDependencies: true,
+        optionalDependencies: true,
+        peerDependencies: true,
+        bundledDependencies: true,
+      },
+    ],
+    'license-header/header': ['error', '../../license-header.js'],
+  },
 };

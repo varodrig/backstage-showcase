@@ -18,5 +18,12 @@
     "test:e2e": {},
     "build-image": {}
   },
-  "globalDependencies": ["tsconfig.json"]
+  "globalDependencies": [
+    "tsconfig.json",
+    "package.json",
+    "yarn.lock",
+    ".eslintrc.js",
+    ".prettierrc",
+    "license-header.js"
+  ]
 }

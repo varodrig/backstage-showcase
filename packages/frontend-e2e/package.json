@@ -1,0 +1,20 @@
+{
+  "name": "frontend-e2e",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "lint": "eslint .",
+    "test:e2e": "start-server-and-test \"(cd ../../apps/frontend && npm run start)\" --expect 200 http://localhost:3000 \"(cypress run --browser chrome)\""
+  },
+  "dependencies": {
+    "cypress": "^12.5.1",
+    "start-server-and-test": "^1.15.3"
+  },
+  "devDependencies": {
+    "eslint-config-custom": "*",
+    "eslint-plugin-cypress": "^2.12.1",
+    "eslint-plugin-jest": "^27.2.1",
+    "tsconfig": "*",
+    "typescript": "^4.9.5"
+  }
+}
