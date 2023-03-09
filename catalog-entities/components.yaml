@@ -12,6 +12,7 @@ metadata:
   annotations:
     argocd/app-name: "janus-idp-smaug"
     backstage.io/kubernetes-id: "janus-idp"
+    backstage.io/techdocs-ref: dir:.
     github.com/project-slug: janus-idp/backstage-showcase
     quay.io/repository-slug: janus-idp/redhat-backstage-build
 spec:

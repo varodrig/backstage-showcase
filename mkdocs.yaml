@@ -1,0 +1,4 @@
+site_name: 'backstage-showcase'
+
+nav:
+  - Home: index.md
